@@ -1,0 +1,7 @@
+Background: #0D0D0D
+Primary text: #FFFFFF
+Secondary text: #A0A0A0
+Accent: #7C5CFC
+
+Headings: Inter Bold
+Body: Inter Regular
