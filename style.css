@@ -100,7 +100,8 @@ a:hover {
 
 .buttonrow {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 8px;
 }
 
 /* Other sections */
@@ -227,14 +228,16 @@ a:hover {
 
 /* Buttons */
 .button {
-    display: inline-block;
+    display: block;
+    width: 80%;
+    box-sizing: border-box;
 
     font-family: "Inter", sans-serif;
     font-weight: 700;
     font-size: 16px;
     text-shadow: none;
 
-    padding: 12px 40px;
+    padding: 12px 10px;
 
     background-color: var(--text-blue);
     color: var(--white);
@@ -244,6 +247,7 @@ a:hover {
 
     text-decoration: none;
     cursor: pointer;
+    text-align: center;
 }
 
 .button:visited {
