@@ -243,6 +243,16 @@ a:hover {
     color: var(--white);
 }
 
+.contact-item > span:last-child {
+    min-width: 0;
+    flex: 1;
+}
+
+.contact-item small {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
 /* Buttons */
 .button {
     display: block;
