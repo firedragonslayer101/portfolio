@@ -130,11 +130,18 @@ a:hover {
     aspect-ratio: 1 / 1;
     object-fit: cover;
     display: block;
+    margin: 0 auto;
     border-radius: 8px;
+}
+
+.project-credit {
+    display: block;
+    text-align: center;
 }
 
 .extended-description {
     display: block;
+    text-align: center;
 }
 
 .projectName {
@@ -145,6 +152,7 @@ a:hover {
     color: var(--text-orange);
     -webkit-text-stroke: 2px var(--text-clicked);
 
+    text-align: center;
     margin-bottom: 5px;
 }
 
@@ -235,6 +243,8 @@ a:hover {
 .button {
     display: block;
     width: 80%;
+    margin: 0 auto;
+    margin-bottom: 4px;
     box-sizing: border-box;
 
     font-family: "Inter", sans-serif;
