@@ -188,9 +188,11 @@ a:hover {
 
 /* Contact me */
 .contact-content {
+    width: 100%;
     max-width: 100%;
     margin: 0 auto;
     padding: 64px 32px;
+    box-sizing: border-box;
 }
 
 .contact-list {
@@ -486,6 +488,12 @@ a:hover {
 
 @media (max-width: 600px) {
     /* mobile projects */
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 100%;
+    }
+    
     .projects img {
         width: 90%;
     }
