@@ -492,6 +492,16 @@ a:hover {
     .extended-description {
         display: none;
     }
+    .sectionHeaders{
+        font-weight: 700;
+        font-size: clamp(42px, 7vw, 96px);
+        line-height: 1.1;
+
+        color: var(--white);
+        -webkit-text-stroke: 1px var(--text-blue);
+
+        margin-bottom: 5px;
+    }
     
     /* mobile about */
     .about-content {
