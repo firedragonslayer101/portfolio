@@ -279,9 +279,10 @@ a:hover {
 }
 
 .video-showcase > img {
-    width: clamp(80px, 15vw, 200px);
-    height: auto;
-    max-height: 200px;
+    height: clamp(100px, 40vw, 200px);
+    max-width: none;
+    width: auto;
+    
     object-fit: contain;
     flex-shrink: 1;
 }
