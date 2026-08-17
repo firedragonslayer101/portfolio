@@ -123,6 +123,7 @@ a:hover {
 .projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
 }
 
 .projects img {
@@ -165,6 +166,7 @@ a:hover {
     grid-template-columns: 0.5fr 1fr;
     gap: 64px;
 
+    max-width: 100%;
     align-items: center;
 }
 
@@ -186,7 +188,7 @@ a:hover {
 
 /* Contact me */
 .contact-content {
-    max-width: 800px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 64px 32px;
 }
@@ -463,6 +465,7 @@ a:hover {
     margin-top: 8px;
     margin-bottom: 8px;
 
+    max-width: 100%;
     text-align: center;
 }
 
