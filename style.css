@@ -510,6 +510,11 @@ a:hover {
     .extended-description {
         display: none;
     }
+    .projectName {
+        -webkit-text-stroke: 0px var(--text-clicked);
+        color: var(--white);
+    }
+
     .sectionHeaders{
         font-weight: 700;
         font-size: clamp(42px, 7vw, 96px);

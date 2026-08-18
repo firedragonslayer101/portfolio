@@ -15,8 +15,25 @@ document.querySelectorAll(".gallery-grid img").forEach(image => {
 
     image.addEventListener("click", () => {
 
-        lightboxImage.src = image.src;
-        lightbox.classList.add("active");
+        const compressedPath = image.getAttribute("src");
+
+        const fullPath = compressedPath
+            .replace("images/compressed/", "images/")
+            .replace("_compr.", ".");
+
+        const newImage = new Image();
+
+        newImage.onload = () => {
+            lightboxImage.src = fullPath;
+            lightbox.classList.add("active");
+        };
+
+        newImage.onerror = () => {
+            lightboxImage.src = compressedPath;
+            lightbox.classList.add("active");
+        };
+
+        newImage.src = fullPath;
 
     });
 
@@ -24,12 +41,14 @@ document.querySelectorAll(".gallery-grid img").forEach(image => {
 
 document.getElementById("lightbox-close").addEventListener("click", () => {
     lightbox.classList.remove("active");
+    lightboxImage.src = "";
 });
 
 lightbox.addEventListener("click", event => {
 
     if (event.target === lightbox) {
         lightbox.classList.remove("active");
+        lightboxImage.src = "";
     }
 
 });
